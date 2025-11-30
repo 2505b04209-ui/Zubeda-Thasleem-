@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zubeda Thasleem - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SRU College of Engineering</h1>
+        <p>Student Information Portal</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Results</a>
+        <a href="#">Attendance</a>
+        <a href="#">Logout</a>
+    </nav>
+
+    <!-- LOGIN FORM – TASK 3 -->
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Student Login</h2>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Roll Number / Username</label>
+                    <input type="text" id="username" placeholder="Enter 2505B04209" required>
+                    <small class="error" id="userError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <small class="error" id="passError"></small>
+                </div>
+
+                <button type="submit">Login Securely</button>
+            </form>
+
+            <div id="successMessage" class="success hidden">
+                Login Successful! Welcome Zubeda Thasleem 🎉
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 SRU College | Made with AI
+    </footer>
+
+    <!-- JavaScript at the end (best practice) -->
+    <script>
+        // TASK 3: JavaScript Validation
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // stop form from submitting
+
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value;
+            let userError = document.getElementById("userError");
+            let passError = document.getElementById("passError");
+            let success = document.getElementById("successMessage");
+
+            // Reset errors
+            userError.textContent = "";
+            passError.textContent = "";
+            success.classList.add("hidden");
+
+            let valid = true;
+
+            if (username === "") {
+                userError.textContent = "Username cannot be empty!";
+                valid = false;
+            }
+            if (password === "") {
+                passError.textContent = "Password cannot be empty!";
+                valid = false;
+            }
+
+            if (valid) {
+                success.classList.remove("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>

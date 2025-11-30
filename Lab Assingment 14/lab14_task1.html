@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info Portal - SRU College</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            background: linear-gradient(135deg, #e0f2fe, #c0ebff); 
+            min-height: 100vh;
+        }
+        header { 
+            background: #1e40af; 
+            color: white; 
+            padding: 2rem; 
+            text-align: center; 
+        }
+        nav { 
+            background: #1e7a8a; 
+            padding: 1rem; 
+            text-align: center; 
+        }
+        nav a { 
+            color: white; 
+            margin: 0 1.5rem; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        nav a:hover { text-decoration: underline; }
+
+        /* Beautiful Student Card */
+        .student-card {
+            max-width: 500px;
+            margin: 3rem auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        .card-header {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            color: white;
+            padding: 2rem;
+        }
+        .card-header h2 { margin: 0.5rem 0 0; font-size: 2rem; }
+        .card-body {
+            padding: 2rem;
+        }
+        .detail {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        .label {
+            font-weight: bold;
+            color: #1e40af;
+        }
+        .roll {
+            font-size: 1.5rem;
+            color: #7c3aed;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        footer { 
+            background: #1e293b; 
+            color: #e2e8f0; 
+            text-align: center; 
+            padding: 1.5rem; 
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SRU College of Engineering</h1>
+        <p>Student Information Portal</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Results</a>
+        <a href="#">Attendance</a>
+        <a href="#">Logout</a>
+    </nav>
+
+    <!-- YOUR PERSONAL STUDENT CARD -->
+    <div class="student-card">
+        <div class="card-header">
+            <h2>Welcome Back!</h2>
+            <p>Your Profile</p>
+        </div>
+        <div class="card-body">
+            <div class="detail">
+                <span class="label">Name :</span> Zubeda Thasleem
+            </div>
+            <div class="detail">
+                <span class="label">Roll No :</span> 
+                <span class="roll">2505B04209</span>
+            </div>
+            <div class="detail">
+                <span class="label">Branch :</span> Electronics & Communication Engineering (ECE)
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 SRU College of Engineering | Powered by AI 
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* =========================================== */
+/* LAB 14.3 TASK 2 – SEPARATE CSS FILE        */
+/* EVERY LINE EXPLAINED FOR FULL UNDERSTANDING */
+/* =========================================== */
+
+/* Reset everything – clean start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background gradient for whole page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/* Top blue header */
+header {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Navigation bar */
+nav {
+    background: #1e293b;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #e0f2fe;
+    margin: 0 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #60a5fa;
+    transform: translateY(-3px);
+}
+
+/* Beautiful student card */
+.student-card {
+    max-width: 550px;
+    margin: 4rem auto;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.card-header {
+    background: linear-gradient(45deg, #8b5cf6, #3b82f6);
+    color: white;
+    padding: 2.5rem;
+}
+
+.card-header h2 {
+    margin-top: 0.8rem;
+    font-size: 2.2rem;
+}
+
+.card-body {
+    padding: 2.5rem;
+}
+
+.detail {
+    margin: 1.8rem 0;
+    font-size: 1.3rem;
+}
+
+.label {
+    font-weight: bold;
+    color: #1e40af;
+    margin-right: 10px;
+}
+
+.roll {
+    font-size: 1.8rem;
+    color: #7c3aed;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: monospace;
+}
+
+/* RESPONSIVE – Works on mobile! */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .student-card {
+        margin: 2rem 1rem;
+    }
+}
+
+/* Footer – light gray as Sir asked */
+footer {
+    background: #f3f4f6;
+    color: #374151;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+/* TASK 3 – LOGIN FORM STYLING */
+.login-container {
+    max-width: 450px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.login-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 2rem;
+    color: #1e40af;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.success {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #d1fae5;
+    color: #065f46;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.hidden { display: none; }

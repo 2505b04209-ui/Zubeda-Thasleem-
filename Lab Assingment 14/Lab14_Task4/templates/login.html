@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 style="text-align:center; color:#1e40af; margin-top:50px;">
+        SRU College of Engineering
+    </h1>
+    <h2 style="text-align:center;">Student Login</h2>
+
+    <center>
+    <form action="/login" method="POST" style="margin-top:50px;">
+        <input type="text" name="username" placeholder="Roll Number" required 
+               style="padding:15px; width:350px; font-size:18px;"><br><br>
+        <input type="password" name="password" placeholder="Password" required 
+               style="padding:15px; width:350px; font-size:18px;"><br><br>
+        <button type="submit" style="padding:15px 50px; font-size:18px; background:#1e40af; color:white; border:none;">
+            Login Securely
+        </button>
+    </form>
+    </center>
+</body>
+</html>
