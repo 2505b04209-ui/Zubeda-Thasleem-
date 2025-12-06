@@ -1,0 +1,26 @@
+[
+    {
+        "city": "London",
+        "temp": 10,
+        "humidity": 84,
+        "weather": "Broken clouds"
+    },
+    {
+        "city": "Delhi",
+        "temp": 12,
+        "humidity": 66,
+        "weather": "Haze"
+    },
+    {
+        "city": "Tokyo",
+        "temp": 5,
+        "humidity": 61,
+        "weather": "Clear sky"
+    },
+    {
+        "city": "Japan",
+        "temp": 5,
+        "humidity": 66,
+        "weather": "Clear sky"
+    }
+]
