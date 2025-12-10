@@ -1,0 +1,6 @@
+post_text_clean,likes,shares,hour,weekday,is_weekend
+love awesome,45.0,12.0,14,Saturday,True
+check new phone,0.0,5.0,9,Saturday,True
+thanks everyone support,89.0,20.0,11,Monday,False
+,23.0,3.0,18,Monday,False
+beautiful day today,78.0,15.0,8,Wednesday,False

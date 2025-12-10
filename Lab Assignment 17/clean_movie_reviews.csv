@@ -1,0 +1,9 @@
+clean_text,rating_normalized,word_acting,word_alertbad,word_amazing,word_and,word_best,word_but,word_ever,word_film,word_good,word_i,word_it,word_long,word_loved,word_movie,word_nothing,word_of,word_okay,word_special,word_story,word_terrible,word_the,word_this,word_too,word_was,word_worst,word_year
+i loved this movie,1.0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0
+worst film ever,0.1111111111111111,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+,0.6666666666666666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+amazing acting and story,0.8888888888888888,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+okay movie nothing special,0.5555555555555556,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0
+best movie of the year,1.0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1
+alertbad terrible,0.0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+it was good but too long,0.6666666666666666,0,0,0,0,0,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0
